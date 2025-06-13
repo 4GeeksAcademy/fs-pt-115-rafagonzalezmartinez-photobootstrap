@@ -13,12 +13,16 @@
 </head>
 
 <body>
-    <div class="container mt-5 p-3 hstack gap-3">
-        <a class="navbar-brand" href="#">
-            <img src="https://as2.ftcdn.net/v2/jpg/05/42/12/57/1000_F_542125733_JSpiQPCbjzUfC4FLuNooALjfln6V9L00.jpg"
-                alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Instagram
-        </a>
+    <div class="container-fluid p-3 hstack gap-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-md">
+                <a class="navbar-brand" href="#">
+                    <img src="https://as2.ftcdn.net/v2/jpg/05/42/12/57/1000_F_542125733_JSpiQPCbjzUfC4FLuNooALjfln6V9L00.jpg"
+                        alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Instagram
+                </a>
+            </div>
+        </nav>
         <div class="p-2 ms-auto">
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Create a new post
@@ -33,10 +37,13 @@
                         </div>
                         <div class="modal-body">
                             <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
-                            <textarea class="form-control" placeholder="Add the caption of your post here" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" placeholder="Add the caption of your post here"
+                                id="exampleFormControlTextarea1" rows="3"></textarea>
                             <div id="emailHelp" class="form-text">
-                                <button type="button" class="btn btn-light border-black"><i class="fa-solid fa-camera"></i></button>
-                                <button type="button" class="btn btn-light border-black"><i class="fa-solid fa-location-dot"></i></button>
+                                <button type="button" class="btn btn-light border-black"><i
+                                        class="fa-solid fa-camera"></i></button>
+                                <button type="button" class="btn btn-light border-black"><i
+                                        class="fa-solid fa-location-dot"></i></button>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -48,7 +55,7 @@
             </div>
         </div>
         <div class="p-2">
-            <div class="nav-item dropdown">
+            <div class="nav-item dropdown-left">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <i class="fa-solid fa-gear"></i>
@@ -57,7 +64,9 @@
                     <li><a class="dropdown-item" href="#">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Accesibility</a></li>
                     <li><a class="dropdown-item" href="#">Privaci and Data</a></li>
-                    <li><hr></li>
+                    <li>
+                        <hr>
+                    </li>
                     <li><a class="dropdown-item link-danger" href="#">Log out</a></li>
                 </ul>
             </div>
